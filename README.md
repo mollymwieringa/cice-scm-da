@@ -13,7 +13,7 @@ The objective of this repository is to enable a user to either:
     - replicate the results of Wieringa et al. (2023) OR
     - launch their own single-column sea ice data assimilation experiments.
 
-To take advantage of the tools included in this repository, the user will also need working installations of the Data Assimilation Research Testbed (DART) (Anderson et al.,2009) available <a target="_blank" href="https://github.com/NCAR/DART">here</a> and the single column sea ice model, Icepack available <a target="_blank" href="https://github.com/CICE-Consortium/Icepack">here</a>.</small><p>
+To take advantage of the tools included in this repository, the user will also need working installations of the Data Assimilation Research Testbed (DART) (Anderson et al.,2009) available <a target="_blank" href="https://github.com/NCAR/DART">here</a></small> and the single column sea ice model, Icepack available <a target="_blank" href="https://github.com/CICE-Consortium/Icepack">here</a>.</small><p>
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://github.com/jbusecke/cookiecutter-science-project">cookiecutter science project template</a>.</small></p>
