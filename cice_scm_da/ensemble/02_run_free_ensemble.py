@@ -1,8 +1,4 @@
-###############################################################
-## THIS CODE IS UNDER DEVELOPMENT! DO NOT USE! (10/13/2022   ##
-###############################################################
-# 
-# ###############################################################
+#################################################################
 ## IMPORT NECESSARY LIBRARIES                                ##
 ###############################################################
 # This tool MUST be run with an environment in which f90nml exists
@@ -17,29 +13,60 @@ import sys
 ## SET MANUAL INPUTS HERE                                    ##
 ###############################################################
 
-case_name = 'free_'+sys.argv[1]
-spinup_case = 'spinup_'+sys.argv[2]
-storage = '/glade/scratch/mollyw/ICEPACK_RUNS/'+case_name
-icepack_files = '/glade/work/mollyw/Icepack_DART/files/'
-forcing_files = '/glade/scratch/mollyw/ICEPACK_RUNS/FORCING_FILES/'
+# set the free case name and the spinup it is based on
+case_name = sys.argv[1]
+spinup_case = sys.argv[2]
 
+# set the relevant directory names 
+# where is this project repo located on your system?
+project_dir = '/glade/work/mollyw/Projects/cice-scm-da/'
+# where is the Icepack installation located on your system?
+icepack_dir = '/glade/work/mollyw/Icepack_DART/Icepack'
+# where is the scratch directory Icepack will write output to?
+scratch_dir = '/glade/scratch/mollyw/'
+
+# set machine name and compiler
+machine = 'cheyenne'
+compiler = 'intel'
+
+# choose a simulation length
 simulation_years = 10
 
-# choose conditions to perturb
-# Supported options: 
-#       R_snw, ksno, dragio, hi_ssl, hs_ssl, rnw_mlt, 
-#       rhoi, rhos, Cf, atm, ocn, atm_ocn
-if len(sys.argv) > 3:
-    perturb = [sys.argv[i] for i in range(3, len(sys.argv))]
-else:
-    perturb = []
+# This code comes equipped with the ability to perturb param-
+# eters in the sea ice code. Your choice of perturbations should
+# be the same as those used in the spinup ensemble. To do so,
+# you must specify the same parameters supplied to the 
+# 01_spinup_ensemble.py script. 
+
+# The code currently supports the following perturbation options:
+# R_snw: Snow grain radius tuning parameter (unitless)
+# ksno: Snow thermal conductivity (W/m/K)
+# dragio: Ice-ocean drag coefficient (unitless)
+# hi_ssl: Ice surface scattering layer thickness (m)
+# hs_ssl: Snow surface scattering layer thickness (m)
+# rsnw_mlt: Snow melt rate (kg/m^2/s)
+# rhoi: Ice density (kg/m^3)
+# rhos: Snow density (kg/m^3)
+# Cf: ratio of ridging work to PE change in ridging (unitless)
+# atm: atmospheric forcing 
+# ocn: oceanic forcing
 
 ###############################################################
 ## BEGIN LAUNCH- DO NOT EDIT BELOW THIS LINE                 ##
 ###############################################################
 
+# Determine ensemble size and spinup length 
 ensemble_size = len(glob.glob('/glade/scratch/mollyw/ICEPACK_RUNS/'+spinup_case+'/mem*'))
 spinup_length = len(glob.glob('/glade/scratch/mollyw/ICEPACK_RUNS/'+spinup_case+'/mem0001/restart/*.nc'))
+
+#-----------------------------------------#
+# 0. Read parameter inputs
+#-----------------------------------------#
+if len(sys.argv) > 3:
+    perturb = [sys.argv[i] for i in range(3, len(sys.argv))]
+else:
+    perturb = []
+
 #-----------------------------------------#
 # 1. Set parameter details
 #-----------------------------------------#
@@ -55,8 +82,9 @@ drhoi = 917.0
 drhos = 330.0
 
 # Perturbed
-parameters = xr.open_dataset('/glade/work/mollyw/Projects/icepack_ensembles/parameters_'+str(ensemble_size)+'_cice5.nc')
+parameters = xr.open_dataset(project_dir+ '/data/forcings/ICE_PERTS/parameters_30_cice5.nc')
 zeros = np.zeros(ensemble_size)
+
 if 'R_snw' in perturb:
     R_snw = list(parameters.R_snw.values)
 else:
@@ -105,16 +133,26 @@ else:
 #-----------------------------------------#
 # 2. Set up an Icepack case
 #-----------------------------------------#
-comd = './icepack.setup -c '+case_name+' -m cheyenne -e intel'
+# go to the Icepack directory
+os.chdir(icepack_dir)
+
+# set up a new case 
+comd = './icepack.setup -c '+case_name+' -m '+machine+' -e '+compiler
 os.system(comd)
 
 #-----------------------------------------#
 # 3. Build the case 
 #-----------------------------------------#
+# go to the case directory
 os.chdir(case_name)
+
+# build the case
 comd = './icepack.build'
 os.system(comd)
-if os.path.exists(storage) is False:
+
+# check that the case was built correctly
+storage_dir = scratch_dir + '/ICEPACK_RUNS/' + case_name
+if os.path.exists(storage_dir) is False:
     AssertionError('Model did not build correctly! Please rebuild model.')
 else:
     print('Model with following perturbations has been built:', perturb)
@@ -127,21 +165,24 @@ year_init = 2011
 year_end = year_init + simulation_years
 final_year = '{0}'.format('%04d' % year_end)
 
+#-------------------------------------#
+# # 5. Begin cycling through ensemble   
+#-------------------------------------#
 mem = 1
 while mem <= ensemble_size:
     inst_string ='{0}'.format('%04d' % mem) 
     print('Running member '+inst_string+'...')
 
     #create history and restart directories for the run
-    os.chdir(storage)
+    os.chdir(storage_dir)
     os.makedirs('mem' + inst_string + '/history/')
     os.makedirs('mem' + inst_string + '/restart/')
 
     # link the model executable for each member to the main one built for the case
-    os.symlink(storage+'/icepack','mem' + inst_string+'/icepack')
+    os.symlink(storage_dir+'/icepack','mem' + inst_string+'/icepack')
     
     # begin working on an individual ensemble member
-    os.chdir(storage+'/mem' + inst_string)
+    os.chdir(storage_dir+'/mem' + inst_string)
     
     # handle restarts
     runtype_flag = True
@@ -149,7 +190,7 @@ while mem <= ensemble_size:
     restart_file = '/glade/scratch/mollyw/ICEPACK_RUNS/'+spinup_case+'/mem'+inst_string+'/restart/iced.2012-01-01-00000.year'+str(spinup_length)+'.nc'
     
     # read namelist template
-    namelist = f90nml.read(icepack_files+'icepack_in.template')
+    namelist = f90nml.read(project_dir + '/data/templates/ICEPACK_input.nml.template')
 
     # set case settings 
     namelist['setup_nml']['year_init'] = year_init
@@ -175,7 +216,7 @@ while mem <= ensemble_size:
     namelist['dynamics_nml']['dragio'] = dragio[mem-1]
 
     # set namelist forcing options
-    namelist['forcing_nml']['data_dir'] = forcing_files
+    namelist['forcing_nml']['data_dir'] = project_dir + '/data/forcings/'
     if 'atm' in perturb:
         namelist['forcing_nml']['atm_data_file'] = 'ATM_FORCING_'+inst_string+'.txt'
     else:
@@ -203,7 +244,7 @@ while mem <= ensemble_size:
     # advance to the next ensemble member 
     mem += 1
 
-check_restarts = glob.glob(storage + '/mem*/restart/iced.'+final_year+'-01-01-00000.nc')
+check_restarts = glob.glob(storage_dir + '/mem*/restart/iced.'+final_year+'-01-01-00000.nc')
 # print(check_restarts)
 if len(check_restarts) != ensemble_size:
     AssertionError('Free run did not complete as expected. Some restarts are missing. Processed stopped.')

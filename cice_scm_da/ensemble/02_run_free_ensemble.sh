@@ -1,6 +1,6 @@
 #!/bin/bash -l
 ### Job Name
-#PBS -N run_icepack_ensemble
+#PBS -N run_free_ensemble
 ### Charging account
 #PBS -A UWAS0083
 ### Request one chunk of resources with 1 CPU and 10 GB of memory
@@ -20,8 +20,8 @@ mkdir -p $TMPDIR
 
 ### Load Python module and activate NPL environment
 module load ncarenv python
-conda activate icepack
+conda activate cice-scm-da
 
 ### Run analysis script
-python step2_run_free_ensemble.py 'SHEBA' 'SHEBA' 'atm'
+python 02_run_free_ensemble.py 'free_test' 'spinup_test' 'atm'
 
