@@ -17,3 +17,5 @@ dependencies:
   - ipykernel
   - f90nml
   - seaborn
+  - nc-time-axis
+  - nco
