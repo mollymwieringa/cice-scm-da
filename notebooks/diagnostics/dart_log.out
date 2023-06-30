@@ -1,0 +1,1533 @@
+ 
+ --------------------------------------
+ Starting ... at YYYY MM DD HH MM SS = 
+                 2023  6 30 10 12 16
+ Program obs_seq_to_netcdf
+ --------------------------------------
+ 
+  set_nml_output No echo of NML values
+ 
+ Assimilate_these_obs_types:
+    SAT_SEAICE_AGREG_THICKNESS
+ Evaluate_these_obs_types:
+    none
+ Use the precomputed Prior Forward Operators for these obs types:
+    none
+ 
+ ERROR FROM:
+  source : utilities_mod.f90
+  routine: find_namelist_in_file
+  message:  Namelist entry &schedule_nml must exist in file input.nml
+ 
+ 
+ --------------------------------------
+ Starting ... at YYYY MM DD HH MM SS = 
+                 2023  6 30 10 13 21
+ Program obs_seq_to_netcdf
+ --------------------------------------
+ 
+  set_nml_output No echo of NML values
+ 
+ Assimilate_these_obs_types:
+    SAT_SEAICE_AGREG_THICKNESS
+ Evaluate_these_obs_types:
+    none
+ Use the precomputed Prior Forward Operators for these obs types:
+    none
+ 
+  location_mod: using code with optimized cutoffs
+  location_mod: Ignoring vertical separation when computing distances; horizonta
+ l distances only
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110102
+  obs_seq_to_netcdf  creating file obs_epoch_001.nc
+  InitNetCDF  obs_epoch_001.nc is fortran unit        65536
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110103
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110104
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110105
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110106
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110107
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110108
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110109
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110110
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110111
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110112
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110113
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110114
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110115
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110116
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110117
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110118
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110119
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110120
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110121
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110122
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110123
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110124
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110125
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110126
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110127
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110128
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110129
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110130
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110131
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110201
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110202
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110203
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110204
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110205
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110206
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110207
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110208
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110209
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110210
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110211
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110212
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110213
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110214
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110215
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110216
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110217
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110218
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110219
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110220
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110221
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110222
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110223
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110224
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110225
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110226
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110227
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110228
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110301
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110302
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110303
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110304
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110305
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110306
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110307
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110308
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110309
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110310
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110311
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110312
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110313
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110314
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110315
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110316
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110317
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110318
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110319
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110320
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110321
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110322
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110323
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110324
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110325
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110326
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110327
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110328
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110329
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110330
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110331
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110401
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110402
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110403
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110404
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110405
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110406
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110407
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110408
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110409
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110410
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110411
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110412
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110413
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110414
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110415
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110416
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110417
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110418
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110419
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110420
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110421
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110422
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110423
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110424
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110425
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110426
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110427
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110428
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110429
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110430
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110501
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110502
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110503
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110504
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110505
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110506
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110507
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110508
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110509
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110510
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110511
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110512
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110513
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110514
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110515
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110516
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110517
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110518
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110519
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110520
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110521
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110522
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110523
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110524
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110525
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110526
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110527
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110528
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110529
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110530
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110531
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110601
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110602
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110603
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110604
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110605
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110606
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110607
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110608
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110609
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110610
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110611
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110612
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110613
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110614
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110615
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110616
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110617
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110618
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110619
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110620
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110621
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110622
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110623
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110624
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110625
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110626
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110627
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110628
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110629
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110630
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110701
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110702
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110703
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110704
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110705
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110706
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110707
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110708
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110709
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110710
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110711
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110712
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110713
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110714
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110715
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110716
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110717
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110718
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110719
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110720
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110721
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110722
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110723
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110724
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110725
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110726
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110727
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110728
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110729
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110730
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110731
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110801
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110802
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110803
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110804
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110805
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110806
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110807
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110808
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110809
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110810
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110811
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110812
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110813
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110814
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110815
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110816
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110817
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110818
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110819
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110820
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110821
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110822
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110823
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110824
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110825
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110826
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110827
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110828
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110829
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110830
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110831
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110901
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110902
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110903
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110904
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110905
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110906
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110907
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110908
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110909
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110910
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110911
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110912
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110913
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110914
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110915
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110916
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110917
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110918
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110919
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110920
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110921
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110922
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110923
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110924
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110925
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110926
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110927
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110928
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110929
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110930
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111001
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111002
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111003
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111004
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111005
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111006
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111007
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111008
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111009
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111010
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111011
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111012
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111013
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111014
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111015
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111016
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111017
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111018
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111019
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111020
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111021
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111022
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111023
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111024
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111025
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111026
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111027
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111028
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111029
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111030
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111031
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111101
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111102
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111103
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111104
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111105
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111106
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111107
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111108
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111109
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111110
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111111
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111112
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111113
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111114
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111115
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111116
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111117
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111118
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111119
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111120
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111121
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111122
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111123
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111124
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111125
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111126
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111127
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111128
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111129
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111130
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111201
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111202
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111203
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111204
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111205
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111206
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111207
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111208
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111209
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111210
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111211
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111212
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111213
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111214
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111215
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111216
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111217
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111218
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111219
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111220
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111221
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111222
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111223
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111224
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111225
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111226
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111227
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111228
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111229
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111230
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111231
+  obs_seq_to_netcdf Finished successfully.
+ 
+ --------------------------------------
+ Finished ... at YYYY MM DD HH MM SS = 
+                 2023  6 30 10 13 22
+ --------------------------------------
+ 
+ 
+ --------------------------------------
+ Starting ... at YYYY MM DD HH MM SS = 
+                 2023  6 30 10 14 53
+ Program obs_seq_to_netcdf
+ --------------------------------------
+ 
+  set_nml_output No echo of NML values
+ 
+ Assimilate_these_obs_types:
+    SAT_SEAICE_AGREG_THICKNESS
+    SAT_SEAICE_AGREG_CONCENTR
+    SAT_SEAICE_AGREG_FREEBOARD
+ Evaluate_these_obs_types:
+    none
+ Use the precomputed Prior Forward Operators for these obs types:
+    none
+ 
+  location_mod: using code with optimized cutoffs
+  location_mod: Ignoring vertical separation when computing distances; horizonta
+ l distances only
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110102
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110103
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110104
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110105
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110106
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110107
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110108
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110109
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110110
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110111
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110112
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110113
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110114
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110115
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110116
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110117
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110118
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110119
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110120
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110121
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110122
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110123
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110124
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110125
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110126
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110127
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110128
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110129
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110130
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110131
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110201
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110202
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110203
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110204
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110205
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110206
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110207
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110208
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110209
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110210
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110211
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110212
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110213
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110214
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110215
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110216
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110217
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110218
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110219
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110220
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110221
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110222
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110223
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110224
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110225
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110226
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110227
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110228
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110301
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110302
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110303
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110304
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110305
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110306
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110307
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110308
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110309
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110310
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110311
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110312
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110313
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110314
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110315
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110316
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110317
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110318
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110319
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110320
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110321
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110322
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110323
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110324
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110325
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110326
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110327
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110328
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110329
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110330
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110331
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110401
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110402
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110403
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110404
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110405
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110406
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110407
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110408
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110409
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110410
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110411
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110412
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110413
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110414
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110415
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110416
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110417
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110418
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110419
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110420
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110421
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110422
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110423
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110424
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110425
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110426
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110427
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110428
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110429
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110430
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110501
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110502
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110503
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110504
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110505
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110506
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110507
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110508
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110509
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110510
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110511
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110512
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110513
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110514
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110515
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110516
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110517
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110518
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110519
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110520
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110521
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110522
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110523
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110524
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110525
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110526
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110527
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110528
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110529
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110530
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110531
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110601
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110602
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110603
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110604
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110605
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110606
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110607
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110608
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110609
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110610
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110611
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110612
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110613
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110614
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110615
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110616
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110617
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110618
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110619
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110620
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110621
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110622
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110623
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110624
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110625
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110626
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110627
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110628
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110629
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110630
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110701
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110702
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110703
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110704
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110705
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110706
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110707
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110708
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110709
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110710
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110711
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110712
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110713
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110714
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110715
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110716
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110717
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110718
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110719
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110720
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110721
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110722
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110723
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110724
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110725
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110726
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110727
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110728
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110729
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110730
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110731
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110801
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110802
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110803
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110804
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110805
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110806
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110807
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110808
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110809
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110810
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110811
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110812
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110813
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110814
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110815
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110816
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110817
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110818
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110819
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110820
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110821
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110822
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110823
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110824
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110825
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110826
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110827
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110828
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110829
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110830
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110831
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110901
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110902
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110903
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110904
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110905
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110906
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110907
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110908
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110909
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110910
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110911
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110912
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110913
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110914
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110915
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110916
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110917
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110918
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110919
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110920
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110921
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110922
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110923
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110924
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110925
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110926
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110927
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110928
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110929
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110930
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111001
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111002
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111003
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111004
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111005
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111006
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111007
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111008
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111009
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111010
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111011
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111012
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111013
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111014
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111015
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111016
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111017
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111018
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111019
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111020
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111021
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111022
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111023
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111024
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111025
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111026
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111027
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111028
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111029
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111030
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111031
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111101
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111102
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111103
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111104
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111105
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111106
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111107
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111108
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111109
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111110
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111111
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111112
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111113
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111114
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111115
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111116
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111117
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111118
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111119
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111120
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111121
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111122
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111123
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111124
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111125
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111126
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111127
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111128
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111129
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111130
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111201
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111202
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111203
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111204
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111205
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111206
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111207
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111208
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111209
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111210
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111211
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111212
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111213
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111214
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111215
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111216
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111217
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111218
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111219
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111220
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111221
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111222
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111223
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111224
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111225
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111226
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111227
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111228
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111229
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111230
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111231
+  obs_seq_to_netcdf Finished successfully.
+ 
+ --------------------------------------
+ Finished ... at YYYY MM DD HH MM SS = 
+                 2023  6 30 10 14 54
+ --------------------------------------
+ 

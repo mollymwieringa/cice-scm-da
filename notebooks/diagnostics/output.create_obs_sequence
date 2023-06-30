@@ -1,0 +1,1127 @@
+ 
+ --------------------------------------
+ Starting ... at YYYY MM DD HH MM SS = 
+                 2023  6 30 10 14 53
+ Program obs_seq_to_netcdf
+ --------------------------------------
+ 
+  set_nml_output No echo of NML values
+ 
+ Assimilate_these_obs_types:
+    SAT_SEAICE_AGREG_THICKNESS
+    SAT_SEAICE_AGREG_CONCENTR
+    SAT_SEAICE_AGREG_FREEBOARD
+ Evaluate_these_obs_types:
+    none
+ Use the precomputed Prior Forward Operators for these obs types:
+    none
+ 
+ Requesting            1  assimilation periods.
+ 
+epoch      1  start day=0, sec=1
+epoch      1    end day=510609, sec=0
+epoch      1  start 1601 Jan 01 00:00:01
+epoch      1    end 2999 Jan 01 00:00:00
+ 
+  location_mod: using code with optimized cutoffs
+  location_mod: Ignoring vertical separation when computing distances; horizonta
+ l distances only
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110102
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110103
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110104
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110105
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110106
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110107
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110108
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110109
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110110
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110111
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110112
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110113
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110114
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110115
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110116
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110117
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110118
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110119
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110120
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110121
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110122
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110123
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110124
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110125
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110126
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110127
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110128
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110129
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110130
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110131
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110201
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110202
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110203
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110204
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110205
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110206
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110207
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110208
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110209
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110210
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110211
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110212
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110213
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110214
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110215
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110216
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110217
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110218
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110219
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110220
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110221
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110222
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110223
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110224
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110225
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110226
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110227
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110228
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110301
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110302
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110303
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110304
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110305
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110306
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110307
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110308
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110309
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110310
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110311
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110312
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110313
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110314
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110315
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110316
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110317
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110318
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110319
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110320
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110321
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110322
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110323
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110324
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110325
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110326
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110327
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110328
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110329
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110330
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110331
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110401
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110402
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110403
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110404
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110405
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110406
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110407
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110408
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110409
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110410
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110411
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110412
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110413
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110414
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110415
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110416
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110417
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110418
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110419
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110420
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110421
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110422
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110423
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110424
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110425
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110426
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110427
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110428
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110429
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110430
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110501
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110502
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110503
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110504
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110505
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110506
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110507
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110508
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110509
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110510
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110511
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110512
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110513
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110514
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110515
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110516
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110517
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110518
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110519
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110520
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110521
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110522
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110523
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110524
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110525
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110526
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110527
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110528
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110529
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110530
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110531
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110601
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110602
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110603
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110604
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110605
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110606
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110607
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110608
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110609
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110610
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110611
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110612
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110613
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110614
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110615
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110616
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110617
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110618
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110619
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110620
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110621
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110622
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110623
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110624
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110625
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110626
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110627
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110628
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110629
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110630
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110701
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110702
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110703
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110704
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110705
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110706
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110707
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110708
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110709
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110710
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110711
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110712
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110713
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110714
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110715
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110716
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110717
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110718
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110719
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110720
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110721
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110722
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110723
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110724
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110725
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110726
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110727
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110728
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110729
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110730
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110731
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110801
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110802
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110803
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110804
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110805
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110806
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110807
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110808
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110809
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110810
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110811
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110812
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110813
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110814
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110815
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110816
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110817
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110818
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110819
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110820
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110821
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110822
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110823
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110824
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110825
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110826
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110827
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110828
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110829
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110830
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110831
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110901
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110902
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110903
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110904
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110905
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110906
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110907
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110908
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110909
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110910
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110911
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110912
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110913
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110914
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110915
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110916
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110917
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110918
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110919
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110920
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110921
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110922
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110923
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110924
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110925
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110926
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110927
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110928
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110929
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20110930
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111001
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111002
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111003
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111004
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111005
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111006
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111007
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111008
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111009
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111010
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111011
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111012
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111013
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111014
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111015
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111016
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111017
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111018
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111019
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111020
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111021
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111022
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111023
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111024
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111025
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111026
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111027
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111028
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111029
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111030
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111031
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111101
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111102
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111103
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111104
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111105
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111106
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111107
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111108
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111109
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111110
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111111
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111112
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111113
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111114
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111115
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111116
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111117
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111118
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111119
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111120
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111121
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111122
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111123
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111124
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111125
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111126
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111127
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111128
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111129
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111130
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111201
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111202
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111203
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111204
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111205
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111206
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111207
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111208
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111209
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111210
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111211
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111212
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111213
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111214
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111215
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111216
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111217
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111218
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111219
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111220
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111221
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111222
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111223
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111224
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111225
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111226
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111227
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111228
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111229
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111230
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf  opening ../../data/processed/synthetic_obs/free_test/obs_se
+ q.20111231
+ num_obs_in_epoch (           1 ) =            3
+  obs_seq_to_netcdf Finished successfully.
+ 
+ --------------------------------------
+ Finished ... at YYYY MM DD HH MM SS = 
+                 2023  6 30 10 14 54
+ --------------------------------------
+ 

@@ -47,6 +47,8 @@ error_type   = 'default'
 # obs_dir = '/glade/work/mollyw/DA_obs/TEST/'+case+'/'
 if category is True:
     obs_dir= obs_dir + '/itd/'
+else:
+    obs_dir= obs_dir + '/aggregate/'
 
 if error_type == 'scaled':
     obs_dir = obs_dir + 'scaled/'
@@ -253,8 +255,6 @@ def repack_categories(file):
     os.remove(file+'~')
 
     return len(ds.variables)
-
-
 ###############################################################
 ## INTERAL PROCESSES                                         ##
 ###############################################################
@@ -316,6 +316,9 @@ for t in range(0, datelist.shape[0]):
     nml_file['perfect_model_obs_nml']['input_state_files'] = 'cice.r.nc'
     nml_file['obs_kind_nml']['assimilate_these_obs_types'] = ob_types
     nml_file['model_nml']['model_state_variables'] = state_variables
+    nml_file['obs_seq_to_netcdf_nml']['obs_sequence_name'] = ''
+    nml_file['obs_seq_to_netcdf_nml']['obs_sequence_list'] = 'observations_list.txt'
+    nml_file['obs_seq_to_netcdf_nml']['append_to_netcdf'] = True
     nml_file.write('input.nml',force=True)
 
     # define the truth file for this date (a restart from the source case)
@@ -386,14 +389,46 @@ for t in range(0, datelist.shape[0]):
             null = repack_categories(truth_file)
             null = repack_categories(dart_dir + '/models/cice-scm2/work/cice.r.nc')
         
-        os.remove('input.nml')
+        
         os.remove('input.txt')
         os.remove('forward_op_errors0')
         os.remove('perfect_restart.nc')
 
-# Move all generated observation sequence files to obs_dir
+
+# Generate a netcdf file with all the observation sequence files
+files = sorted(glob.glob('obs_seq.*'))
+
+text_file = open("observations_list.txt", "w")
+for file in files:
+    n = text_file.write(file)
+    n = text_file.write('\n')
+text_file.close()
+
+comd = dart_dir + '/models/cice-scm2/work/obs_seq_to_netcdf > output.obs_seq_to_netcdf'
+os.system(comd)
+# Check that the script ran correctly
+otncdf_status = check_completion('output.obs_seq_to_netcdf')
+if otncdf_status < 0:
+    print('obs_seq_to_netcdf did not complete. Process stopping.')
+    sys.exit()
+else:
+    # make a netcdf directory in the obs_dir
+    if os.path.exists(obs_dir + '../netcdfs/') is False:
+        os.makedirs(obs_dir + '../netcdfs/')
+    
+    if category is False:
+        os.system('mv obs_epoch_001.nc '+obs_dir+'../netcdfs/aggregate_observations.nc')
+    else:
+        os.system('mv obs_epoch_001.nc '+obs_dir+'../netcdfs/itd_observations.nc')
+    
+    os.remove('input.nml')
+    os.remove('observations_list.txt')
+
+
+# Move all generated observation sequence files to obs_dir and clean up
 comd = 'mv obs_seq.* '+ obs_dir
 os.system(comd)
+
 num_files = len(glob.glob(obs_dir + '/obs_seq.*'))
 print(str(num_files) + ' days of observations successfully converted. Program finished.')
 
