@@ -1,4 +1,4 @@
-#################################################################
+###############################################################
 ## IMPORT NECESSARY LIBRARIES                                ##
 ###############################################################
 # This tool MUST be run with an environment in which f90nml exists
@@ -9,61 +9,64 @@ import xarray as xr
 import numpy as np
 import sys
 
+from datetime import datetime
+
 ###############################################################
 ## SET MANUAL INPUTS HERE                                    ##
 ###############################################################
 
-# set the free case name and the spinup it is based on
-case_name = sys.argv[1]
-spinup_case = sys.argv[2]
+# set the free cases name and the spinup it is based on
+case_name = sys.argv[1] # SIT_f1_NORM_test
+spinup_case = sys.argv[2] # spinup_test
 
-# set the relevant directory names 
+# set the relevant directory names
 # where is this project repo located on your system?
 project_dir = '/glade/work/mollyw/Projects/cice-scm-da/'
 # where is the Icepack installation located on your system?
-icepack_dir = '/glade/work/mollyw/Icepack_DART/Icepack'
+icepack_dir = '/glade/work/mollyw/Icepack_DART/Icepack/'
+# where is the DART installation located on your system?
+dart_dir = '/glade/work/mollyw/dart_manhattan/'
 # where is the scratch directory Icepack will write output to?
 scratch_dir = '/glade/scratch/mollyw/'
 
-# set machine name and compiler
+# set the machine name and compiler
 machine = 'cheyenne'
 compiler = 'intel'
 
-# choose a simulation length
-simulation_years = 10
+# set assimilation times
+first_assim_time = datetime(2011, 1, 2)
+model_init_time = datetime(2011, 1, 1)
 
-# This code comes equipped with the ability to perturb param-
-# eters in the sea ice code. Your choice of perturbations should
-# be the same as those used in the spinup ensemble. To do so,
-# you must specify the same parameters supplied to the 
-# 01_spinup_ensemble.py script. 
-
-# The code currently supports the following perturbation options:
-# R_snw: Snow grain radius tuning parameter (unitless)
-# ksno: Snow thermal conductivity (W/m/K)
-# dragio: Ice-ocean drag coefficient (unitless)
-# hi_ssl: Ice surface scattering layer thickness (m)
-# hs_ssl: Snow surface scattering layer thickness (m)
-# rsnw_mlt: Snow melt rate (kg/m^2/s)
-# rhoi: Ice density (kg/m^3)
-# rhos: Snow density (kg/m^3)
-# Cf: ratio of ridging work to PE change in ridging (unitless)
-# atm: atmospheric forcing 
-# ocn: oceanic forcing
+# set the filter and regression kinds
+filter_kind = sys.argv[3]
+regression_kind = sys.argv[4]
 
 ###############################################################
 ## BEGIN LAUNCH- DO NOT EDIT BELOW THIS LINE                 ##
 ###############################################################
 
-# Determine ensemble size and spinup length 
+#-----------------------------------------#
+# -1. Configure the assimilation as desired
+#-----------------------------------------#
+# set the algorithm_info_mod and rebuild the filter
+alg_combo = 'f'+str(filter_kind)+'_r'+regression_kind
+os.chdir(dart_dir+'/models/cice-scm2/work/')
+os.system('cp ./algorithm_info_mods/'+alg_combo+'_algorithm_info_mod algorithm_info_mod.f90')
+os.system('./quickbuild.sh filter > output.quickbuild')
+os.chdir(project_dir + '/cice_scm_da/assimilation/')
+
+# determine the ensemble size
 ensemble_size = len(glob.glob(scratch_dir + '/ICEPACK_RUNS/'+spinup_case+'/mem*'))
-spinup_length = len(glob.glob(scratch_dir + '/ICEPACK_RUNS/'+spinup_case+'/mem0001/restart/*.nc'))
+
+# determine the number of days between model initation and assimilation
+days_to_assim = first_assim_time - model_init_time
+assim_date_str = '{0}-{1}-{2}'.format('%04d'%first_assim_time.year, '%02d'%first_assim_time.month, '%02d'%first_assim_time.day)
 
 #-----------------------------------------#
 # 0. Read parameter inputs
 #-----------------------------------------#
-if len(sys.argv) > 3:
-    perturb = [sys.argv[i] for i in range(3, len(sys.argv))]
+if len(sys.argv) > 5:
+    perturb = [sys.argv[i] for i in range(5, len(sys.argv))]
 else:
     perturb = []
 
@@ -136,7 +139,7 @@ else:
 # go to the Icepack directory
 os.chdir(icepack_dir)
 
-# set up a new case 
+# set up a new case
 comd = './icepack.setup -c '+case_name+' -m '+machine+' -e '+compiler
 os.system(comd)
 
@@ -160,14 +163,9 @@ else:
 #-----------------------------------------#
 # 4. Run the case
 #-----------------------------------------#
-simulation_length = 8760*simulation_years
-year_init = 2011
-year_end = year_init + simulation_years
-final_year = '{0}'.format('%04d' % year_end)
+simulation_length = 24 * days_to_assim.days
+year_init = model_init_time.year
 
-#-------------------------------------#
-# # 5. Begin cycling through ensemble   
-#-------------------------------------#
 mem = 1
 while mem <= ensemble_size:
     inst_string ='{0}'.format('%04d' % mem) 
@@ -187,7 +185,7 @@ while mem <= ensemble_size:
     # handle restarts
     runtype_flag = True
     restart_flag = True
-    restart_file = scratch_dir + '/ICEPACK_RUNS/'+spinup_case+'/mem'+inst_string+'/restart/iced.2012-01-01-00000.year'+str(spinup_length)+'.nc'
+    restart_file = scratch_dir + '/ICEPACK_RUNS/'+spinup_case+'/mem'+inst_string+'/restart/iced.2012-01-01-00000.year10.nc'
     
     # read namelist template
     namelist = f90nml.read(project_dir + '/data/templates/ICEPACK_input.nml.template')
@@ -234,7 +232,7 @@ while mem <= ensemble_size:
     os.system(comd)
 
     # check the output file for successful model completion
-    check_finished = 'ICEPACK COMPLETED SUCCESSFULLY'
+    check_finished = 'ICEPACK_COMPLETED SUCCESSFULLY'
     txt = open('icepack.out').readlines()
     if check_finished not in txt:
         AssertionError('Icepack did not run correctly! Process stopped.')
@@ -244,9 +242,9 @@ while mem <= ensemble_size:
     # advance to the next ensemble member 
     mem += 1
 
-check_restarts = glob.glob(storage_dir + '/mem*/restart/iced.'+final_year+'-01-01-00000.nc')
+check_restarts = glob.glob(storage_dir + '/mem*/restart/iced.'+assim_date_str+'-00000.nc')
 # print(check_restarts)
 if len(check_restarts) != ensemble_size:
-    AssertionError('Free run did not complete as expected. Some restarts are missing. Processed stopped.')
+    print('Free run did not complete as expected. Some restarts are missing. Processed stopped.')
 else:   
     print('PROCESS COMPLETE. Please check member directories.')
