@@ -18,7 +18,7 @@ import numpy as np
 ###############################################################
 
 # set the case from which synthetic observations will be generated
-source_case = 'free_test'
+source_case = sys.argv[1]
 
 # choose a random ensemble member to use as truth
 rand_member = 14
@@ -38,7 +38,10 @@ first_obs_date = datetime(2011,1,2)
 last_obs_date = datetime(2011,12,31)
 
 # determine whether observations should be category-based or aggregates
-category = True
+if sys.argv[2] == 'category':
+    category = True
+else:
+    category = False
 
 # set the error type (default, scaled, or uniform)
 error_type   = 'default'
@@ -55,9 +58,11 @@ if error_type == 'scaled':
 
 
 # Choose ob types
-# ob_types = ['SAT_SEAICE_AGREG_THICKNESS', 'SAT_SEAICE_AGREG_CONCENTR', 'SAT_SEAICE_AGREG_FREEBOARD']
-ob_types = ['SAT_SEAICE_VICE01','SAT_SEAICE_VICE02','SAT_SEAICE_VICE03','SAT_SEAICE_VICE04', 'SAT_SEAICE_VICE05',
-            'SAT_SEAICE_AICE01','SAT_SEAICE_AICE02','SAT_SEAICE_AICE03','SAT_SEAICE_AICE04', 'SAT_SEAICE_AICE05']
+if category is True:
+    ob_types = ['SAT_SEAICE_VICE01','SAT_SEAICE_VICE02','SAT_SEAICE_VICE03','SAT_SEAICE_VICE04', 'SAT_SEAICE_VICE05',
+                'SAT_SEAICE_AICE01','SAT_SEAICE_AICE02','SAT_SEAICE_AICE03','SAT_SEAICE_AICE04', 'SAT_SEAICE_AICE05']
+else:
+    ob_types = ['SAT_SEAICE_AGREG_THICKNESS', 'SAT_SEAICE_AGREG_CONCENTR', 'SAT_SEAICE_AGREG_FREEBOARD']
 
 ###############################################################
 ## DEFINE HELPER FUNCTIONS HERE                              ##
