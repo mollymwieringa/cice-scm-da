@@ -38,12 +38,12 @@ first_obs_date = datetime(2011,1,2)
 last_obs_date = datetime(2011,12,31)
 
 # determine whether observations should be category-based or aggregates
-if sys.argv[2] == 'category':
+if sys.argv[4] == 'category':
     category = True
 else:
     category = False
 
-# set the error type (default, scaled, or uniform)
+# set the error type (default or uniform)
 error_type   = 'default'
 
 
@@ -52,17 +52,6 @@ if category is True:
     obs_dir= obs_dir + '/itd/'
 else:
     obs_dir= obs_dir + '/aggregate/'
-
-if error_type == 'scaled':
-    obs_dir = obs_dir + 'scaled/'
-
-
-# Choose ob types
-if category is True:
-    ob_types = ['SAT_SEAICE_VICE01','SAT_SEAICE_VICE02','SAT_SEAICE_VICE03','SAT_SEAICE_VICE04', 'SAT_SEAICE_VICE05',
-                'SAT_SEAICE_AICE01','SAT_SEAICE_AICE02','SAT_SEAICE_AICE03','SAT_SEAICE_AICE04', 'SAT_SEAICE_AICE05']
-else:
-    ob_types = ['SAT_SEAICE_AGREG_THICKNESS', 'SAT_SEAICE_AGREG_CONCENTR', 'SAT_SEAICE_AGREG_FREEBOARD']
 
 ###############################################################
 ## DEFINE HELPER FUNCTIONS HERE                              ##
@@ -263,6 +252,13 @@ def repack_categories(file):
 ###############################################################
 ## INTERAL PROCESSES                                         ##
 ###############################################################
+
+# set the observation types
+if category is True:
+    ob_types = ['SAT_SEAICE_VICE01','SAT_SEAICE_VICE02','SAT_SEAICE_VICE03','SAT_SEAICE_VICE04', 'SAT_SEAICE_VICE05',
+                'SAT_SEAICE_AICE01','SAT_SEAICE_AICE02','SAT_SEAICE_AICE03','SAT_SEAICE_AICE04', 'SAT_SEAICE_AICE05']
+else:
+    ob_types = ['SAT_SEAICE_AGREG_THICKNESS', 'SAT_SEAICE_AGREG_CONCENTR', 'SAT_SEAICE_AGREG_FREEBOARD']
 
 # create the obs output directory if it does not already exist
 if os.path.exists(obs_dir) is False:

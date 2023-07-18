@@ -1,13 +1,13 @@
 #!/bin/bash -l
 ### Job Name
-#PBS -N postprocess_icepack_da
+#PBS -N postprocess_assimilation
 ### Charging account
 #PBS -A UWAS0083
 ### Request one chunk of resources with 1 CPU and 10 GB of memory
 #PBS -l select=1:ncpus=1:mem=4GB
 ### Allow job to run up to 30 minutes
-#PBS -l walltime=09:00:00
-### Route the job to the casper queue
+#PBS -l walltime=00:25:00
+### Route the job to the economy queue
 #PBS -q economy
 ### Join output and error streams into single file
 #PBS -j oe
@@ -19,9 +19,8 @@ mkdir -p $TMPDIR
 
 ### Load Python module and activate NPL environment
 module load ncarenv python
-conda activate icepack
+conda activate cice-scm-da
 
 ### Run analysis script
-python step4b_cycle.py 2011 1 2 2011 12 31
+python 05_postprocess.py CAT_f101_BNRH_opt3 all
 
-### 2011 12 31
