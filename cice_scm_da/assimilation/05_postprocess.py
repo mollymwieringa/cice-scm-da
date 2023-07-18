@@ -29,6 +29,9 @@ if not os.path.exists(output_path):
 
 start = perf_counter()
 
+print('Working on case '+case+'...')
+print('Postprocessing stages: '+str(stages))
+
 for stage in stages:
     if stage in ['input','preassim','analysis','output']:
         base_path = '/glade/scratch/'+user+'/ICEPACK_RUNS/'+case+'/output_files/'
