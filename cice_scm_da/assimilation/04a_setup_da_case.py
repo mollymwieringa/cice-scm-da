@@ -50,10 +50,15 @@ regression_kind = sys.argv[4]
 #-----------------------------------------#
 # set the algorithm_info_mod and rebuild the filter
 alg_combo = 'f'+str(filter_kind)+'_r'+regression_kind
-# os.chdir(dart_dir+'/models/cice-scm2/work/')
-# os.system('cp ./algorithm_info_mods/'+alg_combo+'_algorithm_info_mod algorithm_info_mod.f90')
-# os.system('./quickbuild.sh filter > output.quickbuild')
-# os.chdir(project_dir + '/cice_scm_da/assimilation/')
+
+if sys.argv[5] == 'rebuild':
+    os.chdir(dart_dir+'/models/cice-scm2/work/')
+    os.system('cp ./algorithm_info_mods/'+alg_combo+'_algorithm_info_mod algorithm_info_mod.f90')
+    os.system('./quickbuild.sh filter > output.quickbuild')
+    os.chdir(project_dir + '/cice_scm_da/assimilation/')
+    print('Rebuilding filter with '+alg_combo+' algorithm_info_mod.')
+else:
+    print('Using existing filter build!')
 
 # determine the ensemble size
 ensemble_size = len(glob.glob(scratch_dir + '/ICEPACK_RUNS/'+spinup_case+'/mem*'))
@@ -65,8 +70,8 @@ assim_date_str = '{0}-{1}-{2}'.format('%04d'%first_assim_time.year, '%02d'%first
 #-----------------------------------------#
 # 0. Read parameter inputs
 #-----------------------------------------#
-if len(sys.argv) > 5:
-    perturb = [sys.argv[i] for i in range(5, len(sys.argv))]
+if len(sys.argv) > 6:
+    perturb = [sys.argv[i] for i in range(6, len(sys.argv))]
 else:
     perturb = []
 

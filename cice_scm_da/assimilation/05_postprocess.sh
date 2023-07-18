@@ -6,7 +6,7 @@
 ### Request one chunk of resources with 1 CPU and 10 GB of memory
 #PBS -l select=1:ncpus=1:mem=4GB
 ### Allow job to run up to 30 minutes
-#PBS -l walltime=00:25:00
+#PBS -l walltime=00:40:00
 ### Route the job to the economy queue
 #PBS -q economy
 ### Join output and error streams into single file
@@ -22,5 +22,5 @@ module load ncarenv python
 conda activate cice-scm-da
 
 ### Run analysis script
-python 05_postprocess.py CAT_f101_BNRH_opt3 all
+python 05_postprocess.py VIC_f101_BNRH_test all
 
