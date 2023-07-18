@@ -1,13 +1,13 @@
 #!/bin/bash -l
 ### Job Name
-#PBS -N run_assimilations
+#PBS -N postprocess_assimilation
 ### Charging account
 #PBS -A UWAS0083
 ### Request one chunk of resources with 1 CPU and 10 GB of memory
 #PBS -l select=1:ncpus=1:mem=4GB
 ### Allow job to run up to 30 minutes
-#PBS -l walltime=10:00:00
-### Route the job to the casper queue
+#PBS -l walltime=00:25:00
+### Route the job to the economy queue
 #PBS -q economy
 ### Join output and error streams into single file
 #PBS -j oe
@@ -22,5 +22,5 @@ module load ncarenv python
 conda activate cice-scm-da
 
 ### Run analysis script
-python 04a_setup_da_case.py CAT_f101_BNRH_opt3 spinup_test 101 BNRH atm
-python 04b_cycle.py CAT_f101_BNRH_opt3 free_test 101 BNRH 2011 1 2 2011 12 31 SAT_SEAICE_AICE01 SAT_SEAICE_VICE01 SAT_SEAICE_AICE02 SAT_SEAICE_VICE02 SAT_SEAICE_AICE03 SAT_SEAICE_VICE03 SAT_SEAICE_AICE04 SAT_SEAICE_VICE04 SAT_SEAICE_AICE05 SAT_SEAICE_VICE05
+python 05_postprocess.py CAT_f101_BNRH_opt3 all
+

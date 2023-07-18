@@ -50,10 +50,10 @@ regression_kind = sys.argv[4]
 #-----------------------------------------#
 # set the algorithm_info_mod and rebuild the filter
 alg_combo = 'f'+str(filter_kind)+'_r'+regression_kind
-os.chdir(dart_dir+'/models/cice-scm2/work/')
-os.system('cp ./algorithm_info_mods/'+alg_combo+'_algorithm_info_mod algorithm_info_mod.f90')
-os.system('./quickbuild.sh filter > output.quickbuild')
-os.chdir(project_dir + '/cice_scm_da/assimilation/')
+# os.chdir(dart_dir+'/models/cice-scm2/work/')
+# os.system('cp ./algorithm_info_mods/'+alg_combo+'_algorithm_info_mod algorithm_info_mod.f90')
+# os.system('./quickbuild.sh filter > output.quickbuild')
+# os.chdir(project_dir + '/cice_scm_da/assimilation/')
 
 # determine the ensemble size
 ensemble_size = len(glob.glob(scratch_dir + '/ICEPACK_RUNS/'+spinup_case+'/mem*'))

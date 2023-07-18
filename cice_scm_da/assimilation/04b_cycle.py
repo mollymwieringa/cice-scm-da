@@ -39,8 +39,12 @@ regression_kind = sys.argv[4] #'NORM'
 postprocessing = 'cice'
 
 # what observations are being assimilated?
-obs_type = ['SAT_SEAICE_AGREG_THICKNESS']
-cat_assim = False 
+if len(sys.argv) > 11:
+    obs_type = [sys.argv[i] for i in range(11, len(sys.argv))]
+else:
+    print('No observations called! Please choose an observation type to assimilate!')
+    sys.exit()
+cat_assim = True 
 truth_member = 14
 
 # set the assimilation dates
