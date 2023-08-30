@@ -39,12 +39,17 @@ regression_kind = sys.argv[4] #'NORM'
 postprocessing = 'cice'
 
 # what observations are being assimilated?
-if len(sys.argv) > 11:
-    obs_type = [sys.argv[i] for i in range(11, len(sys.argv))]
+if len(sys.argv) > 12:
+    obs_type = [sys.argv[i] for i in range(12, len(sys.argv))]
 else:
     print('No observations called! Please choose an observation type to assimilate!')
     sys.exit()
-cat_assim = True 
+
+if sys.argv[11] == 'cat':
+    cat_assim = True
+else:
+    cat_assim = False
+ 
 truth_member = 14
 
 # set the assimilation dates

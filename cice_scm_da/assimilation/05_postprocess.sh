@@ -22,5 +22,5 @@ module load ncarenv python
 conda activate cice-scm-da
 
 ### Run analysis script
-python 05_postprocess.py VIC_f101_BNRH_test all
+python 05_postprocess.py CAT_f101_NORM_opt1 all
 
